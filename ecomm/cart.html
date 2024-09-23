@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>E-commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <div class="cart-item" data-id="1">
+                    <img src="product1.jpg" alt="Product 1">
+                    <div class="item-details">
+                        <h4>Product 1</h4>
+                        <p>Price: $29.99</p>
+                        <p>Quantity: <input type="number" value="1" min="1"></p>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <!-- Add more cart items dynamically -->
+            </div>
+            <div class="cart-summary">
+                <h3>Summary</h3>
+                <p>Total Items: <span id="total-items">1</span></p>
+                <p>Total Price: <span id="total-price">$29.99</span></p>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-commerce. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
